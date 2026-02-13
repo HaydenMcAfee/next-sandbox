@@ -1,13 +1,9 @@
 import MUIThemeProvider from './theme-provider';
 import "./globals.css";
-
+import Navbar from './api/components/Navbar';
 import {
-  AppBar,
-  Toolbar,
   Typography,
-  Button,
   Box,
-  Stack,
 } from '@mui/material';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 
@@ -30,19 +26,7 @@ export default function RootLayout({
 
           {/* --- NAVBAR --- */}
           <Box component="header" sx={{ position: 'sticky', top: 0, zIndex: 1100 }}>
-            <AppBar position="static" color="transparent" elevation={0}>
-              <Toolbar>
-                <CloudQueueIcon sx={{ mr: 2, color: 'primary.main' }} />
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
-                  Haydn Cloud
-                </Typography>
-                <Stack direction="row" spacing={2}>
-                  <Button color="inherit">File Upload</Button>
-                  <Button color="inherit">File Explorer</Button>
-                  <Button variant="contained" sx={{ borderRadius: 2 }}>Sign Up</Button>
-                </Stack>
-              </Toolbar>
-            </AppBar>
+            <Navbar />
           </Box>
 
           <Box component="main" sx={{ flexGrow: 1 }}>
