@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                 <Stack direction="row" spacing={2}>
                     <NavButton href="/fileUpload">File Upload</NavButton>
                     <NavButton href="/fileExplorer">File Explorer</NavButton>
-                    <NavButton href="/fileExplorer">About</NavButton>
+                    <NavButton href="/about">About</NavButton>
                     <Button variant="contained" sx={{ borderRadius: 2 }}>Sign Up</Button>
                 </Stack>
             </Toolbar>

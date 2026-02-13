@@ -5,7 +5,7 @@ import {
     Box,
 } from '@mui/material';
 
-export default function Page() {
+export default function AboutPage() {
     <Box sx={{ flexGrow: 1, bgcolor: 'background.default' }}>
         <Container maxWidth="md" sx={{ pt: 15, pb: 10, textAlign: 'center' }}>
             <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 800 }}>
