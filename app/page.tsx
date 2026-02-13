@@ -10,8 +10,6 @@ import {
   Stack, 
 } from '@mui/material';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import ShieldIcon from '@mui/icons-material/Shield';
 
 export default function Home() {
 return (
