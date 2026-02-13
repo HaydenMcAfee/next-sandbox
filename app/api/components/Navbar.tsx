@@ -1,12 +1,15 @@
+'use client';
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import {
+    Link,
     Stack,
 } from '@mui/material';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+import { NavButton } from './NavButton';
 
 const Navbar: React.FC = () => {
     return (
@@ -17,8 +20,9 @@ const Navbar: React.FC = () => {
                     Haydn Cloud
                 </Typography>
                 <Stack direction="row" spacing={2}>
-                    <Button color="inherit">File Upload</Button>
-                    <Button color="inherit">File Explorer</Button>
+                    <NavButton href="/fileUpload">File Upload</NavButton>
+                    <NavButton href="/fileExplorer">File Explorer</NavButton>
+                    <NavButton href="/fileExplorer">About</NavButton>
                     <Button variant="contained" sx={{ borderRadius: 2 }}>Sign Up</Button>
                 </Stack>
             </Toolbar>

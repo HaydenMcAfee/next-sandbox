@@ -7,9 +7,6 @@ import {
 
 export default function Home() {
   return (
-    <Box sx={{ flexGrow: 1, bgcolor: 'background.default' }}>
-
-
       <Container maxWidth="md" sx={{ pt: 15, pb: 10, textAlign: 'center' }}>
         <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 800 }}>
           I need to find <br />
@@ -19,8 +16,5 @@ export default function Home() {
           plz hire me
         </Typography>
       </Container>
-
-
-    </Box>
   );
 }
