@@ -15,7 +15,12 @@ const Navbar: React.FC = () => {
         <AppBar position="static" color="transparent" elevation={0}>
             <Toolbar>
                 <CloudQueueIcon sx={{ mr: 2, color: 'primary.main' }} />
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
+                <Typography
+                    variant="h6"
+                    component="a"
+                    href="/"
+                    sx={{ flexGrow: 1, fontWeight: 'bold', textDecoration: 'none', color: 'inherit' }}
+                >
                     Haydn Cloud
                 </Typography>
                 <Stack direction="row" spacing={2}>
