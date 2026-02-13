@@ -1,35 +1,15 @@
 'use client';
-import React from 'react';
-import { 
-  AppBar, 
-  Toolbar, 
-  Typography, 
-  Button, 
-  Container, 
-  Box, 
-  Stack, 
+import {
+  Typography,
+  Container,
+  Box,
 } from '@mui/material';
-import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 
 export default function Home() {
-return (
+  return (
     <Box sx={{ flexGrow: 1, bgcolor: 'background.default' }}>
-      {/* --- NAVBAR --- */}
-      <AppBar position="static" color="transparent" elevation={0}>
-        <Toolbar>
-          <CloudQueueIcon sx={{ mr: 2, color: 'primary.main' }} />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
-            Haydn Cloud
-          </Typography>
-          <Stack direction="row" spacing={2}>
-            <Button color="inherit">File Upload</Button>
-            <Button color="inherit">File Explorer</Button>
-            <Button variant="contained" sx={{ borderRadius: 2 }}>Sign Up</Button>
-          </Stack>
-        </Toolbar>
-      </AppBar>
 
-      {/* --- HERO SECTION --- */}
+
       <Container maxWidth="md" sx={{ pt: 15, pb: 10, textAlign: 'center' }}>
         <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 800 }}>
           I need to find <br />
@@ -41,12 +21,6 @@ return (
       </Container>
 
 
-      {/* --- FOOTER --- */}
-      <Box component="footer" sx={{ py: 6, textAlign: 'center' }}>
-        <Typography variant="body2" color="text.secondary">
-          © {new Date().getFullYear()} Hayden McAfee. All rights reserved.
-        </Typography>
-      </Box>
     </Box>
   );
 }
